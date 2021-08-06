@@ -1,5 +1,5 @@
 import React from 'react';
-import Wave from '../components/Wave';
+// import Wave from '../components/Wave';
 // Animations
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
