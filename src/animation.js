@@ -78,3 +78,15 @@ export const sliderContainer = {
         transition: { staggerChildren: 0.1, ease: 'easeOut' },
     },
 };
+
+export const scrollReveal = {
+    hidden: {
+        scale: 1.1,
+        opacity: 0
+    },
+    show: {
+        scale: 1,
+        opacity: 1,
+        transition: { duration: 0.5 },
+    },
+};
