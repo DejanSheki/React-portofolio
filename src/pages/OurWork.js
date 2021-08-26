@@ -9,6 +9,7 @@ import goodtimes from '../img/goodtimes-small.png';
 import { motion } from 'framer-motion';
 import { pageAnimation, fade, photoAnimation, lineAnimation, slider, sliderContainer, swoopAdoop } from '../animation';
 import { useScroll } from '../components/useScroll';
+import ScrollTop from '../components/ScrollTop';
 
 const OurWork = () => {
     const [element, controls] = useScroll();
@@ -43,13 +44,14 @@ const OurWork = () => {
                     <img src={theracer} alt="Racer" />
                 </Link>
             </Movie>
-            <Movie ref={element2} variants={swoopAdoop} animate={controls2} initial='hidden'>
+            <Movie ref={element2} variants={fade} animate={controls2} initial='hidden'>
                 <h2>Good Times</h2>
                 <motion.div variants={lineAnimation} className="line"></motion.div>
                 <Link to="/work/good-times">
                     <img src={goodtimes} alt="Good Times" />
                 </Link>
             </Movie>
+            <ScrollTop />
         </Work>
     );
 };

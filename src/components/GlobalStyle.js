@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
 body {
     background: #1b1b1b;
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
 }
 button {
     font-weight: bold;
@@ -39,6 +40,7 @@ h4 {
 }
 a {
     font-size: 1.1rem;
+    text-decoration: none;
 }
 span {
     font-weight: bold;
